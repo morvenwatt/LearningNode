@@ -16,7 +16,14 @@ app.get('./apps', (req, res) => {
 
         }
     }
+
     let genre = ['Action', 'Puzzle', 'Strategy', 'Casual', 'Arcade', 'Card']
+    for (i=0; i < genre.length; i++) {
+        
+    }
+        
+
+     
     let results = googleApps
         .filter(app =>
             app
