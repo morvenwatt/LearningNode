@@ -4,8 +4,9 @@
   "description": "",
   "main": "playstore.js",
   "scripts": {
-    "start": "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
   }
 }

@@ -36,6 +36,3 @@ app.get('/books', (req, res) => {
     res.json(results)
 })
 
-app.listen(8000, () => {
-    console.log('I\'m listening bitches.')
-})
