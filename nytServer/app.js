@@ -15,7 +15,7 @@ app.get('/books', (req, res) => {
 
     if (sort) {
         if (!['title', 'rank'].includes(sort)){
-            return res.status(400).send('Sort must be title or rank.')
+            return res.status(400).send('Sort must be one of title or rank.')
 
         }
     }
@@ -36,3 +36,4 @@ app.get('/books', (req, res) => {
     res.json(results)
 })
 
+module.exports = app;

@@ -24,9 +24,9 @@ app.get('./apps', (req, res) => {
     }
         
     let results = googleApps
-        .filter(app =>
-            app
-                .genre
+        .filter(googleApp =>
+            googleApp
+                .app
                 .toLowerCase()
                 .includes(search.toLowerCase()));
 
@@ -40,3 +40,4 @@ app.get('./apps', (req, res) => {
     res.json(results)
 })
 
+module.exports = app;
